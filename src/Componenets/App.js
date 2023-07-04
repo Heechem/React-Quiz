@@ -68,7 +68,11 @@ function reducer(state, action) {
         status: "ready",
       };
     case "tick":
-      return { ...state, remainingSeconds: state.remainingSeconds - 1 };
+      return {
+        ...state,
+        remainingSeconds: state.remainingSeconds - 1,
+        status: state.remainingSeconds === 0 ? "finished" : state.status,
+      };
     default:
       throw new Error("Action unknown");
   }
@@ -79,8 +83,10 @@ const App = () => {
     { status, questions, index, answer, points, highscore, remainingSeconds },
     dispatch,
   ] = useReducer(reducer, initialState);
+
   const numQuestions = questions.length;
   const maxPoints = questions.reduce((prev, curr) => prev + curr.points, 0);
+
   useEffect(function () {
     fetch("http://localhost:8000/questions")
       .then((res) => res.json())
