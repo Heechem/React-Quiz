@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React Quiz tutoarial part of My course , its a course to learn useReducer 
+
+![image](https://github.com/Heechem/React-Quiz/assets/117024247/0ded38b3-5385-4726-b482-15bb3742cebc)
+![image](https://github.com/Heechem/React-Quiz/assets/117024247/4d4c3037-c6d1-49f9-9381-9358273edad3)
+![image](https://github.com/Heechem/React-Quiz/assets/117024247/4ec21745-67fd-423a-8ce4-9265d1ddad2f)
+
+![image](https://github.com/Heechem/React-Quiz/assets/117024247/3bad94d8-f96f-4dee-9a6d-34d5eb2f5fb5)
 
 ## Available Scripts
 
